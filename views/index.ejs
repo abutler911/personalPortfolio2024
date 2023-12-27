@@ -4,8 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrew Butler | 2024</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Andrew Butler</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1>Welcome to My Portfolio!</h1>
+      <p>Hi, I'm Andy - Web Developer, Pilot, and Data Analyst.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <!-- You can loop through your projects here using EJS -->
+      <% /* projects.forEach(project => { */ %>
+      <div class="project">
+        <h3><%= /* project.title */ %></h3>
+        <p><%= /* project.description */ %></p>
+        <!-- Add more project details here -->
+      </div>
+      <% /* }); */ %>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Download my <a href="/path-to-resume.pdf" download>resume</a>.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="/send-message" method="post">
+        <!-- Your contact form fields here -->
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2023 Andy's Portfolio</p>
+    </footer>
+
+    <script src="/main.js"></script>
+    <!-- Link to your JS file -->
   </body>
 </html>
